@@ -61,7 +61,7 @@ class CoursesController extends Controller
         $courses->numOfHours = $request->input('NumberOfHours');
         $courses->lec_id = Session::get('frontSession')->id;
         $courses->coursePic = "default.jpg";
-
+        $courses->description="";
         $courses->save();
         return redirect('/homeStudent');
 

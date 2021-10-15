@@ -21,6 +21,7 @@ class CreateCourseTable extends Migration
             $table->double('cost');
             $table->integer('numOfHours');
             $table->unsignedBigInteger('lec_id');
+            $table->string('coursePic');
             $table->timestamps();
 
             //$table->foreign('lec_id')->references('id')->on('lecturer')->onDelete('cascade');
